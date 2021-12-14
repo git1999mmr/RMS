@@ -12,7 +12,7 @@ html {
 	  opacity: 0.85;
 	  width: auto;
 	  height: fit-content;
-	  padding: 40px;
+	  padding: 30px;
   }
   h1{
 	  font-family: 'DM Serif Display', serif;
@@ -105,9 +105,9 @@ html {
 		  font-weight: bold;
 		  color: rgb(8, 128, 128);
 		  font-family: 'PT Sans Narrow', sans-serif;
-		  font-size: 50%;
+		  font-size: 60%;
 		  padding: 10px;
-		  font-size: 30px;
+		  font-size: 40px;
 		  color: rgb(8, 128, 128);
 	  }
   #con7{
@@ -132,7 +132,7 @@ html {
 	  } 
   .bottomrow{
 	  text-align: nowrap;
-	  margin-top: 50%;
+	  margin-top: 10%;
 	  filter: brightness(200%);
 	  filter: contrast(200%);
 	  filter: drop-shadow(150%);
@@ -142,6 +142,15 @@ html {
 	  outline: 1px dotted;
   }
   #login{
+	  display: block;
 	  position: relative;
-	  float: right;
+	  float:left;
+	  padding-top: 0%;
+	  padding: 5%;
+	  padding-left: 0%;
   }
+  #login1{
+	display: block;
+	position: relative;
+	float: left;
+}
