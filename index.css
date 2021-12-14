@@ -1,153 +1,147 @@
 html {
-  scroll-behavior: smooth;
-  background: url(images/Back_index.jpg) no-repeat center fixed;
-  background-size:cover;
-  height: 100%;
-  font-family: 'DM Serif Display', serif;
-  font-family: 'DM Serif Text', serif;
-  font-family: 'PT Serif', serif;
-}
-body{
-	background-color: rgb(255, 255, 255);
-    opacity: 0.85;
-    width: 100%;
-	height: fit-content;
-    padding: 50px;
-	white-space: nowrap;
-}
-h1{
-    font-family: 'DM Serif Display', serif;
-	margin-top: 0rem;
-    color: rgb(20, 160, 160);
-    font-family: serif;
-    text-align: center;
-}
-.text-success{
-	white-space: nowrap;
+	scroll-behavior: smooth;
+	background: url(images/Back_index.jpg) no-repeat center fixed;
+	background-size:cover;
+	height: 800px;
 	font-family: 'DM Serif Display', serif;
-    font-size: 300%;
-    padding-bottom: 1rem;
-	margin-top: 0%;
-	padding-left: 0rem;
-}
-.navbar{
-	white-space: nowrap;
-	padding: 0rem;
-}
-.navbar-brand{
-	padding: 0rem;
-	font-family: 'DM Serif Display', serif;
-}
-.navbar-item{
-	font-family: 'DM Serif Display', serif;
-	font-weight: bold;
-    color: rgb(255, 255, 255);
-	border: #fff;
-}
-.main-content{
-  	font-family: 'PT Serif', serif;
-	position: relative;
-	float: center;
-	width: 100%;
-	border-radius: 20px;
-	margin-left: 1rem;
-	margin-top: 2rem
-};
-.login_form{
-	background: rgb(255, 255, 255);
-	border-top-right-radius:20px;
-	border-bottom-right-radius:20px;
-	border-top:1px solid rgb(245, 245, 245);
-	border-right:1px solid rgb(245, 243, 243);
-}
-form{
-	align-content: center;
-	padding: 0 2rem;
-}
-.form__input{
-	width: 100%;
-	border: #fff;
-	border-radius: 0px;
-	border-bottom: 1px solid rgb(255, 252, 252);
-	padding: 0.2rem;
-	padding-left: 1rem;
-	margin:0.5rem auto;
-}
-.btn{
-	transition: all .1s ease;
-	width: 80%;
-	border: #fff;
-	border-radius: 30px;
-	color:#008080;
-	font-weight: 500px;
-	background-color: #fff;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-.btn:hover, .btn:focus{
-	background-color: #046666;
-	color:#fff;
-	outline: none;
-}
-#logo{
-	vertical-align: top;
-	display:flex;
-	padding-bottom: 0%;
-	padding-right: 0%;
-	margin-right: 0%;
-	position: relative;
-	float: left;
-	padding: 15px;
-	opacity: 0.8;
-}
-.container-fluid{
-	text-align: right;
-	align-content: right;
-	ruby-align: auto;
-}
-#c1{
-		text-align: relative;
-		float: center;
-		font-weight: bold;
-		color: rgb(8, 128, 128);
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-size: 50%;
-		padding: 10px;
-		font-size: 30px;
-		color: rgb(8, 128, 128);
-	}
-#con7{
-		/* margin-left: 10%; */
-		width: 80%;
-		height: 60%;
-		position: relative;
-		float: center;
-		color: #046666;
-		text-align: left;
-		padding-top: 2rem;
-		white-space:inherit;
-		padding-bottom: 0rem;
-	}
-.nav-link{
-		margin-top: 0px;
-		padding: 3rem;
-		position: relative;
-		float: left;
-		font-size: 30px;
-		color: rgb(8, 128, 128);
-	} 
-.bottomrow{
-	margin-top: 50%;
-	filter: brightness(200%);
-	filter: contrast(200%);
-	filter: drop-shadow(150%);
-	filter: saturate(150%);
-}
-button1 {
-    outline: 1px dotted;
-}
-
-section{
-	white-space:normal;
-
-}
+	font-family: 'DM Serif Text', serif;
+	font-family: 'PT Serif', serif;
+  }
+  body{
+	  background-color: rgb(255, 255, 255);
+	  opacity: 0.85;
+	  width: auto;
+	  height: fit-content;
+	  padding: 40px;
+  }
+  h1{
+	  font-family: 'DM Serif Display', serif;
+	  margin-top: 0rem;
+	  color: rgb(20, 160, 160);
+	  font-family: serif;
+	  text-align: center;
+  }
+  .text-success{
+	  white-space: nowrap;
+	  font-family: 'DM Serif Display', serif;
+	  font-size: 300%;
+	  padding-bottom: 1rem;
+	  margin-top: 0%;
+	  padding-left: 0rem;
+  }
+  .navbar{
+	  white-space: nowrap;
+	  padding: 0rem;
+  }
+  .navbar-brand{
+	  padding: 0rem;
+	  font-family: 'DM Serif Display', serif;
+  }
+  .navbar-item{
+	  font-family: 'DM Serif Display', serif;
+	  font-weight: bold;
+	  color: rgb(255, 255, 255);
+	  border: #fff;
+  }
+  .main-content{
+		font-family: 'PT Serif', serif;
+	  position: relative;
+	  float: center;
+	  width: 100%;
+	  border-radius: 20px;
+	  margin-left: 1rem;
+	  margin-top: 2rem
+  };
+  .login_form{
+	  background: rgb(255, 255, 255);
+	  border-top-right-radius:20px;
+	  border-bottom-right-radius:20px;
+	  border-top:1px solid rgb(245, 245, 245);
+	  border-right:1px solid rgb(245, 243, 243);
+  }
+  form{
+	  align-content: center;
+	  padding: 0 2rem;
+  }
+  .form__input{
+	  width: 100%;
+	  border: #fff;
+	  border-radius: 0px;
+	  border-bottom: 1px solid rgb(255, 252, 252);
+	  padding: 0.2rem;
+	  padding-left: 1rem;
+	  margin:0.5rem auto;
+  }
+  .btn{
+	  transition: all .1s ease;
+	  width: 80%;
+	  border: #fff;
+	  border-radius: 30px;
+	  color:#008080;
+	  font-weight: 500px;
+	  background-color: #fff;
+	  margin-top: 0.5em;
+	  margin-bottom: 0.5em;
+  }
+  .btn:hover, .btn:focus{
+	  background-color: #046666;
+	  color:#fff;
+	  outline: none;
+  }
+  #logo{
+	  position: relative;
+	  float: left;
+	  padding: 10px;
+	  opacity: 0.8;
+  }
+  .container-fluid{
+	  text-align: right;
+	  align-content: right;
+	  ruby-align: auto;
+  }
+  #c1{
+		  text-align: relative;
+		  float: center;
+		  font-weight: bold;
+		  color: rgb(8, 128, 128);
+		  font-family: 'PT Sans Narrow', sans-serif;
+		  font-size: 50%;
+		  padding: 10px;
+		  font-size: 30px;
+		  color: rgb(8, 128, 128);
+	  }
+  #con7{
+		  /* margin-left: 10%; */
+		  width: 80%;
+		  height: 60%;
+		  position: relative;
+		  float: center;
+		  color: #046666;
+		  text-align: left;
+		  padding-top: 2rem;
+		  white-space:inherit;
+		  padding-bottom: 0rem;
+	  }
+  .nav-link{
+		  margin-top: 0px;
+		  padding: 3rem;
+		  position: relative;
+		  float: left;
+		  font-size: 30px;
+		  color: rgb(8, 128, 128);
+	  } 
+  .bottomrow{
+	  text-align: nowrap;
+	  margin-top: 50%;
+	  filter: brightness(200%);
+	  filter: contrast(200%);
+	  filter: drop-shadow(150%);
+	  filter: saturate(150%);
+  }
+  button1 {
+	  outline: 1px dotted;
+  }
+  #login{
+	  position: relative;
+	  float: right;
+  }
