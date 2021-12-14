@@ -133,7 +133,7 @@ html {
   .bottomrow{
 	  display: inline;
 	  text-align: nowrap;
-	  margin-top: 30%;
+	  margin-top: 20%;
 	  filter: brightness(200%);
 	  filter: contrast(200%);
 	  filter: drop-shadow(150%);
