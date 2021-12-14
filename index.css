@@ -44,9 +44,9 @@ html {
 	  border: #fff;
   }
   .main-content{
-		font-family: 'PT Serif', serif;
-	  position: relative;
-	  float: center;
+	  font-family: 'PT Serif', serif;
+	  /* position: relative; */
+	  float: left;
 	  width: 100%;
 	  border-radius: 20px;
 	  margin-left: 1rem;
@@ -132,7 +132,7 @@ html {
 	  } 
   .bottomrow{
 	  text-align: nowrap;
-	  margin-top: 10%;
+	  margin-top: 20%;
 	  filter: brightness(200%);
 	  filter: contrast(200%);
 	  filter: drop-shadow(150%);
@@ -142,15 +142,14 @@ html {
 	  outline: 1px dotted;
   }
   #login{
-	  display: block;
+	  white-space: nowrap;
+	  display: inline-block;
 	  position: relative;
-	  float:left;
 	  padding-top: 0%;
 	  padding: 5%;
 	  padding-left: 0%;
   }
   #login1{
-	display: block;
-	position: relative;
-	float: left;
+	  white-space: nowrap;
+	  display: inline-block;
 }
