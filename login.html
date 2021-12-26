@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"">
-<head>
+<html lang="en">
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title> RMS</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap.css">
+  	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text&family=PT+Serif&display=swap" rel="stylesheet">
     <link
 			rel="stylesheet"
@@ -20,9 +17,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="icon" href="icon_browse.png">
+		<link rel="icon" href="images/icon_browse.png">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+
 </head>
-<body onload="checkCookie()">
+<body >
 	<!-- Title & Nav bar -->
  <h1 class="text-success"><i class="fas fa-utensils"></i>  Roi élégant</h1>
   <nav class="navbar navbar-expand-lg navbar-dark font-weight-normal bg-info">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" onclick="play()" id="navbarSupportedContent";>
     <ul class="navbar-nav ml-auto bg-info" >
         <li class="nav-item font-weight-normal text-white">
-            <a class="nav-link" href="#" style="font-size: 100%" >Home</a>
+            <a class="nav-link" href="index.html" style="font-size: 100%" >Home</a>
         </li>
         <li class="nav-item font-weight-normal text-white">
             <a class="nav-link" href="menu.html" style="font-size: 100%" >Menu</a>
@@ -48,5 +48,6 @@
  </div>
 </nav>
 <script src="index.js"></script>
+<script src="indexjq.js"></script>
 </body>
 </html>

@@ -22,7 +22,71 @@
     <script src="bootstrap.js"></script>
 
 </head>
-<body onload="checkCookie()">
+<body>
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "newuser";
+    $data = mysqli_connect($servername,$username,$password,$database);
+    if($data == false){
+        die("Not Connected");
+    }
+    else{
+        
+        if(isset($_POST["email"])){
+        $fname=$_POST["firstname"];
+        $lname=$_POST["lastname"];
+        $mail=$_POST["email"];
+        $pass1=$_POST["password1"];
+        $pass2=$_POST["password2"];
+
+
+        if (empty($fname)) {
+            echo "Invalid firstname";
+            exit();
+    
+        }
+        else if(empty($lname)){
+            echo "Invalid lastname";
+            exit();
+        }
+
+        else if(empty($mail)){
+            echo "Invalid email";
+            exit();
+        }
+        else if(empty($pass1)){
+            echo "Invalid Password";
+            exit();
+        }
+        else if(empty($pass2)){
+            echo "Invalid Confirm-Password";
+            exit();
+        }
+
+        else if(($pass1)!=($pass2)){
+            echo "Invalid Confirm-Password ---- Typing Error";
+
+        }
+        else{
+        $sql="INSERT INTO newusertable (firstname,lastname,email,passwordval) VALUES ('".$fname."','".$lname."','".$mail."','".$pass1."')";
+        }
+
+        if(mysqli_query($data,$sql)){
+            echo "New Record created succesfully";
+            header("location:regsuccess.html");
+        }
+        else{
+            echo "error:".$sql.''.mysqli_error($data);
+            header("location:regfailure.html");
+        }
+    }
+        mysqli_close($data);
+        
+    }
+    ?>
+
 	<!-- Title & Nav bar -->
  <h1 class="text-success"><i class="fas fa-utensils"></i>  Roi élégant</h1>
   <nav class="navbar navbar-expand-lg navbar-dark font-weight-normal bg-info">
@@ -58,7 +122,7 @@
                             <h2 style="font-size: 150%; padding-top: 5%; padding-left: 0%;">Sign Up</h2>
                         </div>
                         <div class="row">
-                            <form control="" class="form-group" action="signup.php" method="POST">
+                            <form control="" class="form-group" action="signup.php" method="post">
                                 <div class="row text-light font-weight-italic">
                                     <input type="text" name="firstname" id="firstname" class="form__input" placeholder="First name">
                                 </div>
@@ -72,7 +136,7 @@
                                     <input type="password" name="password1" id="password1" class="form__input" placeholder="Type Password">
                                 </div>
                                 <div class="row text-light font-weight-italic">
-                                    <input type="password" name="password2" id="password2" class="form__input" placeholder="Confirm Password">
+                                    <input type="password" name="Password2" id="password2" class="form__input" placeholder="confirm Password">
                                 </div>
                                 <audio id ="audio" src="click1.wav" autoplay="false"></audio>
                                 <div class="row text-center font-weight-italic">
@@ -85,7 +149,8 @@
             </div>
         </div>
       </div>
-      <script src="index.js"></script>
-      <script src="indexjq.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
