@@ -11,28 +11,50 @@ function playSound() {
   b.play();
 }
 
-function equate(){
-    console.log("Print it")
+// function equate(){
+//     console.log("Print it")
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    let userdata = ["harvey","login"];
-    let passworddata = ["harveygame","loginout"];
+//     var username = document.form1.username.value;
+//     var password = document.form1.password.value;
+//     let userdata = ["harvey","login"];
+//     let passworddata = ["harveygame","loginout"];
     
-    for(var i=0;i<2;i++){
-      console.log("for looped")
+//     for(var i=0;i<2;i++){
+//       console.log("for looped")
 
-      if (username == userdata[i] && password == passworddata[i]){  
-      alert("Login Succesful");
-      window.location = "login.html"
+//       if (username == userdata[i] && password == passworddata[i]){  
+//       alert("Login Succesful");
+//       window.location = "login.html"
 
-     return false ;
-    }
-   }
-           console.log("for looped in")
+//      return false ;
+//     }
+//    }
+//            console.log("for looped in")
 
-    alert("Login Unsuccessfull");
-  }
+//     alert("Login Unsuccessfull");
+//   }
+
+  // function validation()  
+  //           {  
+  //               var id=document.form1.username.value;  
+  //               var ps=document.form1.password.value;  
+  //               if(id.length=="" && ps.length=="") {  
+  //                   alert("User Name and Password fields are empty");  
+  //                   return false;  
+  //               }  
+  //               else  
+  //               {  
+  //                   if(id.length=="") {  
+  //                       alert("User Name is empty");  
+  //                       return false;  
+  //                   }   
+  //                   if (ps.length=="") {  
+  //                   alert("Password field is empty");  
+  //                   return false;  
+  //                   }  
+  //               }                             
+  //           } 
+
   function setCookie(cname,cvalue,exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));

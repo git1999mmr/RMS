@@ -7,8 +7,8 @@
     <title> RMS</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="bootstrap.css">
-  	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text&family=PT+Serif&display=swap" rel="stylesheet">
     <link
 			rel="stylesheet"
@@ -18,6 +18,9 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="icon" href="images/icon_browse.png">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+
 </head>
 <body>
 	<!-- Title & Nav bar -->
@@ -73,19 +76,19 @@
   </a>
 </div>
 <!-- Login Form  -->
-<div class="col-lg-6 col-md-8 col-xs-12" id="login">
+<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12" id="login">
 <div class="container-fluid" style="text-align: center;">
 		<div class="row main-content bg-info text-light">
 			<div class="col-lg-6 col-md-8 col-xs-10 col-sm-12 text-center restaurant__info" style="padding: 5%;">
 				<span class="restaurant__logo"><h2><img id="logo" src="images/logo.jpg" alt="No Photo" height="170px" width="170px" style="padding: 5%;"></h2></span>
 			</div>
-			<div class="col-lg-6 col-md-8 col-sm-12 login_form text-light" style="font-size: 70%;">
+			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 login_form text-light" style="font-size: 70%;">
 				<div class="container-fluid text-light">
 					<div class="row">
 						<h2 style="font-size: 150%; padding-top: 5%; padding-left: 0%;">Sign In</h2>
 					</div>
 					<div class="row">
-						<form control="" class="form-group" action="login.php" method="POST">
+						<form name="form1" control="" class="form-group" action="login.php" method="POST">
 							<div class="row text-light font-weight-italic">
 								<input type="text" name="username" id="username" class="form__input" placeholder="Username">
 							</div>
@@ -94,12 +97,12 @@
 							</div>
 							<audio id ="audio" src="click1.wav" autoplay="false"></audio>
 							<div class="row text-center font-weight-italic">
-								<input onclick="equate()" type="button" value="submit" class="btn" id="submit">
+								<input onclick="" type="submit" value="Submit" class="btn" id="submit">
 							</div>
-						</form>
+						</form onsubmit="">
 					</div>
 					<div class="row text-light font-weight-italic">
-						<p>Don't have an account? <a href="signup.html" style="color: #030303; font-weight: 400px; "><u>Register Here</u></a></p>
+						<p id="">Don't have an account? <a href="signup.html" style="color: #030303; font-weight: 400px; "><span id="jhover"><u>Register Here</u></span></a></p>
 					</div>
 				</div>
 			</div>
@@ -108,10 +111,10 @@
   </div>
 <div class="col-lg-6 col-md-9 col-sm-12">
 <div id="con7" ><h3 id="c1" style="font-size: 120%; white-space : nowrap;">Follow Us On Social media</h3>
-                <a href="https://www.facebook.com/" class="nav-link"><i class="fab fa-facebook-f"></i> </a>
-				<a href="https://twitter.com/?lang=en" class="nav-link"><i class="fab fa-twitter"></i> </a>
-				<a href="https://www.instagram.com/" class="nav-link"><i class="fab fa-instagram"></i> </a>
-				<a href="https://www.linkedin.com/login" class="nav-link"><i class="fab fa-linkedin"></i> </a>
+        <a id="nav_next" href="https://www.facebook.com/" class="nav-link"><i class="fab fa-facebook-f"></i> </a>
+				<a id="nav_next" href="https://twitter.com/?lang=en" class="nav-link"><i class="fab fa-twitter"></i> </a>
+				<a id="nav_next" href="https://www.instagram.com/" class="nav-link"><i class="fab fa-instagram"></i> </a>
+				<a id="nav_next" href="https://www.linkedin.com/login" class="nav-link"><i class="fab fa-linkedin"></i> </a>
    </div>
 </div>
 <div class="bottomrow">
@@ -128,8 +131,11 @@
 		<img src="images/himg5.jpg" alt="" height="100%" width="100%">
 	</div>
 </div>
-<script src="jquery.js"></script>
-<script src="bootstrap.js"></script>
+
 <script src="index.js"></script>
+<script src="indexjq.js"></script>
+<script>  
+            
+</script>  
 </body>
 </html>  

@@ -2,7 +2,8 @@ html {
 	scroll-behavior: smooth;
 	background: url(images/Back_index.jpg) no-repeat center fixed;
 	background-size:cover;
-	height: 800px;
+	width: 100%;
+	height: fit-content;
 	font-family: 'DM Serif Display', serif;
 	font-family: 'DM Serif Text', serif;
 	font-family: 'PT Serif', serif;
@@ -153,4 +154,15 @@ html {
   #login1{
 	  white-space: nowrap;
 	  display: inline-block;
+}
+.row{
+	padding: none;
+}
+
+@media screen and (min-width: 480px) {
+ 
+    #login {
+		padding: none;
+		height: fit-content;
+    }
 }
